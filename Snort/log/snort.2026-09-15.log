@@ -1,0 +1,264 @@
+09/15-20:59:37.386261  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-20:59:37.512732  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-20:59:40.932869  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-20:59:41.034486  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-20:59:46.324822  [**] [1:1415:18] PROTOCOL-SNMP Broadcast request [**] [Classification: Attempted Information Leak] [Priority: 2] {UDP} 192.168.0.11:62302 -> 255.255.255.255:161
+09/15-20:59:46.325340  [**] [1:1415:18] PROTOCOL-SNMP Broadcast request [**] [Classification: Attempted Information Leak] [Priority: 2] {UDP} 192.168.0.11:62302 -> 255.255.255.255:161
+09/15-21:00:02.958704  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:00:03.059053  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:00:30.144927  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:00:30.244354  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:00:50.666757  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:00:50.768710  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879131  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879131  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879131  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879131  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879131  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:06.879931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.980369  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.981658  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:07.987197  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:08.080770  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:08.209759  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:33.969101  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073118  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073510  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073510  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073510  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.073510  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.350728  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.350728  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.350728  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.351060  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.452683  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.453170  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.453170  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.453170  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.864704  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865125  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865125  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865504  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865504  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865721  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.865907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.866181  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.866181  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.866432  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986471  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986471  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986471  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986471  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:35.986907  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.087087  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.089450  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.089450  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.089450  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.089711  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.245538  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.246439  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.246835  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.247090  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.247286  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346104  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346104  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346104  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346104  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.346669  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.446257  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.446257  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.446257  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449126  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449126  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449126  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449126  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449126  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449489  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.449489  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.548500  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.548500  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.548500  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552098  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552098  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552098  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552098  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552098  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552519  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.552519  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.649341  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.649341  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.649341  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.652466  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.655222  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.996182  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.996182  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.996182  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:36.997686  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.094962  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.097525  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.097525  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.097525  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.097525  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.097525  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.100428  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.100428  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.100428  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.100428  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.195610  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.198224  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.198224  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.198224  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.198224  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.198224  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.201065  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.201065  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.201459  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.201459  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.296075  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.298931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.298931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.298931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.298931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.298931  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.302219  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.302219  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.302219  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.302219  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.397398  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.399911  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.399911  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.399911  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.399911  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.399911  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.402547  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.402547  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.402547  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.402547  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.497800  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.500216  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.502505  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.502505  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.502505  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.502505  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.505165  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.505165  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.505165  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.505165  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.603430  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.603920  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.604153  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.604811  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.605116  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.605369  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.607831  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.608210  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.608210  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.608210  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:01:37.738794  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:03:48.019035  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50122 -> 2606:4700:0000:0000:0000:0000:6812:059f:443
+09/15-21:04:37.454652  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:04:37.659044  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:08:42.659889  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:08:45.659975  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:08:45.844361  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:11:56.008320  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50147 -> 2001:0bc8:6006:2023:aa1e:84ff:fef3:5ac4:443
+09/15-21:11:56.028008  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50146 -> 2001:0bc8:6006:2023:aa1e:84ff:fef3:5ac4:443
+09/15-21:11:56.028795  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50150 -> 2001:0bc8:6006:2023:aa1e:84ff:fef3:5ac4:443
+09/15-21:12:50.845341  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:12:51.043455  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:16:56.044385  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:16:56.228659  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:21:01.229224  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:21:01.424157  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:22:13.286839  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50165 -> 2001:0bc8:6006:2023:aa1e:84ff:fef3:5ac4:443
+09/15-21:23:44.486324  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50174 -> 2603:1061:0014:0129:0000:0000:0000:0001:443
+09/15-21:23:44.487505  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50176 -> 2603:1061:0014:0129:0000:0000:0000:0001:443
+09/15-21:25:06.424085  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:25:06.592578  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702
+09/15-21:32:08.283191  [**] [1:1001301:2] SOC DEKMA - SCTP INIT probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:32:28.181581  [**] [1:1001301:2] SOC DEKMA - SCTP INIT probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:32:28.182328  [**] [1:1001302:1] SOC DEKMA - Probable SCTP INIT Scan - Nmap -sY-like [**] [Classification: Detection of a Network Scan] [Priority: 2] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:32:29.304043  [**] [1:1001302:1] SOC DEKMA - Probable SCTP INIT Scan - Nmap -sY-like [**] [Classification: Detection of a Network Scan] [Priority: 2] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:32:44.452453  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:50203 -> 2620:01ec:0033:0001:0000:0000:0000:0010:443
+09/15-21:32:46.020586  [**] [1:1001301:2] SOC DEKMA - SCTP INIT probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:33:32.545683  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 20.42.65.93:443 -> 192.168.0.3:50192
+09/15-21:34:41.367451  [**] [1:1001401:1] DEBUG NMAP -sZ - SCTP COOKIE ECHO fingerprint [**] [Priority: 0] {PROTO:132} 192.168.0.7 -> 192.168.0.16
+09/15-21:35:47.852676  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/15-21:35:47.984223  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:bcc5:e2c2:ec7e:1568:49702

@@ -1,0 +1,16 @@
+09/16-21:33:00.654791  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:00.654791  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:01.873461  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:01.873461  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:02.892785  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:02.892785  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:08.280512  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:08.280512  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:09.302247  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:09.302247  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:10.309198  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:10.309198  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:35.894596  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:35.894596  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:36.910152  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/16-21:33:36.910152  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16

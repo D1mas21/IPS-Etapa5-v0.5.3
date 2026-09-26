@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "state_limits": {
+    "max_tracking_keys": 4096,
+    "max_events_per_key": 128
+  },
+  "policies": [
+    {
+      "id": "tcp_syn_open_scan",
+      "enabled": true,
+      "description": "Correlaciona respuestas RST posteriores a sondeos SYN de Nmap.",
+      "signatures": [
+        { "gid": 1, "sid": 1000003, "revisions": [1] }
+      ],
+      "threshold": { "count": 3, "window_seconds": 10, "distinct_ports": 2, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "tcp_connect_scan",
+      "enabled": true,
+      "description": "Correlaciona cierres de conexiones compatibles con Nmap -sT.",
+      "signatures": [
+        { "gid": 1, "sid": 1000116, "revisions": [2] }
+      ],
+      "threshold": { "count": 3, "window_seconds": 15, "distinct_ports": 2, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "os_fingerprint_sequence",
+      "enabled": true,
+      "description": "Exige varias sondas distintas del conjunto de fingerprint de sistema operativo.",
+      "signatures": [
+        { "gid": 1, "sid": 1000301, "revisions": [2] },
+        { "gid": 1, "sid": 1000302, "revisions": [2] },
+        { "gid": 1, "sid": 1000303, "revisions": [2] },
+        { "gid": 1, "sid": 1000304, "revisions": [2] },
+        { "gid": 1, "sid": 1000305, "revisions": [2] },
+        { "gid": 1, "sid": 1000306, "revisions": [2] },
+        { "gid": 1, "sid": 1000307, "revisions": [2] },
+        { "gid": 1, "sid": 1000308, "revisions": [2] },
+        { "gid": 1, "sid": 1000309, "revisions": [2] },
+        { "gid": 1, "sid": 1000310, "revisions": [2] }
+      ],
+      "threshold": { "count": 3, "window_seconds": 15, "distinct_ports": 0, "distinct_sids": 3 },
+      "cooldown_seconds": 120,
+      "proposed_block_seconds": 600
+    },
+    {
+      "id": "service_version_fingerprint",
+      "enabled": true,
+      "description": "Contenido especifico de Nmap para versionado HTTP o RDP.",
+      "signatures": [
+        { "gid": 1, "sid": 1000401, "revisions": [2] },
+        { "gid": 1, "sid": 1000402, "revisions": [2] },
+        { "gid": 1, "sid": 1000403, "revisions": [2] }
+      ],
+      "threshold": { "count": 1, "window_seconds": 10, "distinct_ports": 0, "distinct_sids": 1 },
+      "cooldown_seconds": 120,
+      "proposed_block_seconds": 600
+    },
+    {
+      "id": "udp_scan_confirmed",
+      "enabled": true,
+      "description": "Secuencias UDP confirmadas por las reglas de produccion.",
+      "signatures": [
+        { "gid": 1, "sid": 1000503, "revisions": [2] },
+        { "gid": 1, "sid": 1000506, "revisions": [2] },
+        { "gid": 1, "sid": 1000507, "revisions": [2] }
+      ],
+      "threshold": { "count": 1, "window_seconds": 10, "distinct_ports": 0, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "tcp_flag_scan_confirmed",
+      "enabled": true,
+      "description": "Firmas agregadas de escaneos ACK, NULL, FIN, Xmas, Maimon y scanflags.",
+      "signatures": [
+        { "gid": 1, "sid": 1000603, "revisions": [2] },
+        { "gid": 1, "sid": 1000702, "revisions": [2] },
+        { "gid": 1, "sid": 1000802, "revisions": [2] },
+        { "gid": 1, "sid": 1000902, "revisions": [2] },
+        { "gid": 1, "sid": 1001002, "revisions": [2] },
+        { "gid": 1, "sid": 1001102, "revisions": [2] }
+      ],
+      "threshold": { "count": 1, "window_seconds": 10, "distinct_ports": 0, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "ip_protocol_recon",
+      "enabled": true,
+      "description": "Correlaciona sondas UDP y GRE compatibles con Nmap -sO.",
+      "signatures": [
+        { "gid": 1, "sid": 1001201, "revisions": [2] },
+        { "gid": 1, "sid": 1001202, "revisions": [2] }
+      ],
+      "threshold": { "count": 2, "window_seconds": 15, "distinct_ports": 0, "distinct_sids": 2 },
+      "cooldown_seconds": 120,
+      "proposed_block_seconds": 600
+    },
+    {
+      "id": "sctp_scan_confirmed",
+      "enabled": true,
+      "description": "Firmas agregadas de SCTP INIT y COOKIE ECHO.",
+      "signatures": [
+        { "gid": 1, "sid": 1001302, "revisions": [2] },
+        { "gid": 1, "sid": 1001402, "revisions": [1] }
+      ],
+      "threshold": { "count": 1, "window_seconds": 10, "distinct_ports": 0, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "icmp_timestamp_recon",
+      "enabled": true,
+      "description": "Exige las dos solicitudes ICMP Timestamp habituales del descubrimiento Nmap -PP.",
+      "signatures": [
+        { "gid": 1, "sid": 1001501, "revisions": [2] }
+      ],
+      "threshold": { "count": 2, "window_seconds": 5, "distinct_ports": 0, "distinct_sids": 1 },
+      "cooldown_seconds": 60,
+      "proposed_block_seconds": 300
+    },
+    {
+      "id": "smb_version_recon",
+      "enabled": true,
+      "description": "Exige varias negociaciones SMB2 compatibles con sondeo Nmap.",
+      "signatures": [
+        { "gid": 1, "sid": 1001701, "revisions": [2] }
+      ],
+      "threshold": { "count": 3, "window_seconds": 10, "distinct_ports": 1, "distinct_sids": 1 },
+      "cooldown_seconds": 120,
+      "proposed_block_seconds": 600
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+# Copyright 2001-2026 Sourcefire, Inc. Todos los derechos reservados.
+#
+# Este archivo contiene (i) reglas propietarias creadas, probadas y certificadas por
+# Sourcefire, Inc. (las "Reglas Certificadas por VRT") que se distribuyen bajo el
+# Acuerdo de Licencia de Reglas Certificadas por VRT (v 2.0), y (ii) reglas creadas por
+# Sourcefire y otros terceros (las "Reglas GPL") que se distribuyen bajo la
+# Licencia Pública General de GNU (GPL), v2.
+# 
+# La titularidad de las Reglas Certificadas por VRT corresponde a Sourcefire, Inc. Las Reglas GPL fueron creadas
+# por Sourcefire y otros terceros. Las Reglas GPL creadas por Sourcefire son
+# propiedad de Sourcefire, Inc., y las Reglas GPL no creadas por Sourcefire son propiedad de
+# sus respectivos creadores. Consulte http://www.snort.org/snort/snort-team/ para obtener
+# una lista de los propietarios terceros y sus respectivos derechos de autor.
+# 
+# Para determinar qué reglas son Reglas Certificadas por VRT o Reglas GPL, consulte
+# el Acuerdo de Licencia de Reglas Certificadas por VRT (v2.0).
+#
+# ============================================================
+# NMAP -p OS PUERTOS - DEBUG
+# ============================================================
+
+# ETAPA 1 - SYN caracteristico observado en Nmap
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Estado interno SYN Nmap-like"; flags:S; window:1024; dsize:0; flowbits:set,soc.nmap.syn1024; flowbits:noalert; sid:1000001; rev:1;)
+
+# ETAPA 2 - El servidor confirma que el puerto esta abierto
+alert tcp 192.168.0.16 any -> any any (msg:"SOC DEKMA - Estado interno SYNACK Nmap-like"; flags:SA; dsize:0; flowbits:isset,soc.nmap.syn1024; flowbits:set,soc.nmap.synack; flowbits:noalert; sid:1000002; rev:1;)
+
+# ETAPA 3 - Scanner aborta inmediatamente con RST
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap probable TCP SYN scan sobre puerto abierto"; flags:R; window:0; dsize:0; flowbits:isset,soc.nmap.syn1024&soc.nmap.synack; classtype:network-scan; sid:1000003; rev:1;)
+
+# ============================================================
+# NMAP -sT OS FINGERPRINTING - DEBUG
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"STATE sT - SYN 64240"; flags:S; window:64240; dsize:0; flowbits:set,soc.st.syn; flowbits:noalert; sid:1000111; rev:2;)
+
+alert tcp 192.168.0.16 any -> any any (msg:"STATE sT - SYNACK"; flags:SA; window:8192; dsize:0; flowbits:isset,soc.st.syn; flowbits:set,soc.st.synack; flowbits:noalert; sid:1000112; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"STATE sT - ACK handshake"; flags:A; window:126; dsize:0; flowbits:isset,soc.st.syn&soc.st.synack; flowbits:set,soc.st.ack; flowbits:noalert; sid:1000113; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"STATE sT - CANCEL payload cliente"; dsize:>0; flowbits:isset,soc.st.ack; flowbits:unset,soc.st.ack; flowbits:noalert; sid:1000114; rev:2;)
+
+alert tcp 192.168.0.16 any -> any any (msg:"STATE sT - CANCEL payload servidor"; dsize:>0; flowbits:isset,soc.st.ack; flowbits:unset,soc.st.ack; flowbits:noalert; sid:1000115; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable Nmap TCP Connect Scan -sT"; flags:RA; window:126; dsize:0; flowbits:isset,soc.st.syn&soc.st.synack&soc.st.ack; classtype:network-scan; priority:3; sid:1000116; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP OS FINGERPRINTING (-O)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+# ECN - probe altamente caracteristico
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe ECN"; flags:SCE; window:3; dsize:0; classtype:network-scan; priority:2; sid:1000301; rev:2;)
+
+# T2 - NULL + ventana 128
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T2 NULL"; flags:0; window:128; dsize:0; classtype:network-scan; priority:2; sid:1000302; rev:2;)
+
+# T3 - FIN SYN PSH URG + ventana 256
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T3"; flags:FSPU; window:256; dsize:0; classtype:network-scan; priority:2; sid:1000303; rev:2;)
+
+# T4 - ACK + ventana 1024
+# AUXILIAR: falso positivo confirmado con nmap -sA y -sW.
+# NO sera utilizado como indicador fuerte por Wazuh.
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T4 ACK auxiliary"; flags:A; window:1024; dsize:0; classtype:network-scan; priority:3; sid:1000304; rev:2;)
+
+# T5 - SYN + ventana 31337
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T5"; flags:S; window:31337; dsize:0; classtype:network-scan; priority:2; sid:1000305; rev:2;)
+
+# T6 - ACK + ventana 32768
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T6"; flags:A; window:32768; dsize:0; classtype:network-scan; priority:2; sid:1000306; rev:2;)
+
+# T7 - FIN PSH URG + ventana 65535
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe T7"; flags:FPU; window:65535; dsize:0; classtype:network-scan; priority:2; sid:1000307; rev:2;)
+
+# U1 - UDP 300 bytes
+alert udp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe U1 UDP"; dsize:300; classtype:network-scan; priority:2; sid:1000308; rev:2;)
+
+# IE1 - ICMP fingerprint
+alert icmp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe IE1"; itype:8; icmp_seq:295; classtype:network-scan; priority:2; sid:1000309; rev:2;)
+
+# IE2 - ICMP fingerprint
+alert icmp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Nmap OS fingerprint probe IE2"; itype:8; icmp_seq:296; classtype:network-scan; priority:2; sid:1000310; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP OS FINGERPRINTING (-sV -p)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 80 (msg:"SOC DEKMA - Probable Nmap HTTP Service Version Detection -sV NSE"; flow:to_server,established; content:"Nmap Scripting Engine"; nocase; classtype:network-scan; priority:2; threshold:type limit,track by_src,count 1,seconds 5; sid:1000401; rev:2;)
+
+alert tcp any any -> 192.168.0.16 80 (msg:"SOC DEKMA - Nmap HTTP Version Probe nmaplowercheck"; flow:to_server,established; content:"GET /nmaplowercheck"; nocase; classtype:network-scan; priority:2; threshold:type limit,track by_src,count 1,seconds 5; sid:1000402; rev:2;)
+
+alert tcp any any -> 192.168.0.16 3389 (msg:"SOC DEKMA - Nmap RDP Service Version Detection -sV"; flow:to_server,established; content:"Cookie: mstshash=nmap"; nocase; classtype:network-scan; priority:2; threshold:type limit,track by_src,count 1,seconds 5; sid:1000403; rev:2;)
+# ============================================================
+# SOC DEKMA - NMAP OS FINGERPRINTING (-sU -p)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert udp any any -> 192.168.0.16 53 (msg:"STATE NMAP -sU DNS - version.bind"; content:"|00 06 01 00 00 01 00 00 00 00 00 00 07 76 65 72 73 69 6f 6e 04 62 69 6e 64 00 00 10 00 03|"; depth:30; dsize:30; flowbits:set,soc.nmap.su.dns1; flowbits:noalert; sid:1000501; rev:2;)
+alert udp any any -> 192.168.0.16 53 (msg:"STATE NMAP -sU DNS - status probe"; content:"|00 00 10 00 00 00 00 00 00 00 00 00|"; depth:12; dsize:12; flowbits:isset,soc.nmap.su.dns1; flowbits:set,soc.nmap.su.dns2; flowbits:noalert; sid:1000502; rev:2;)
+alert udp any any -> 192.168.0.16 53 (msg:"SOC DEKMA - Nmap UDP Scan -sU DNS probe sequence"; content:"|00 00 00 00 00 01 00 00 00 00 00 00 09 5f 73 65 72 76 69 63 65 73 07 5f 64 6e 73 2d 73 64 04 5f 75 64 70 05 6c 6f 63 61 6c 00 00 0c 00 01|"; depth:46; dsize:46; flowbits:isset,soc.nmap.su.dns1&soc.nmap.su.dns2; classtype:network-scan; priority:2; threshold:type limit,track by_src,count 1,seconds 10; sid:1000503; rev:2;)
+
+alert udp any any -> 192.168.0.16 137 (msg:"DEBUG NMAP -sU - NetBIOS NBSTAT wildcard probe"; content:"CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"; offset:13; depth:32; content:"|00 00 21 00 01|"; distance:0; within:5; dsize:50; sid:1000504; rev:1;)
+alert udp any any -> 192.168.0.16 161 (msg:"STATE NMAP -sU SNMP - SNMPv1 probe"; content:"|30 82 00 2f 02 01 00 04 06 70 75 62 6c 69 63 a0 82 00 20 02 04 4c 33 a7 56 02 01 00 02 01 00 30 82 00 10 30 82 00 0c 06 08 2b 06 01 02 01 01 05 00 05 00|"; depth:51; dsize:51; flowbits:set,soc.nmap.su.snmp1; flowbits:noalert; sid:1000505; rev:2;)
+alert udp any any -> 192.168.0.16 161 (msg:"SOC DEKMA - Nmap UDP Scan -sU SNMP probe sequence"; content:"|30 3a 02 01 03 30 0f 02 02 4a 69 02 03 00 ff e3 04 01 04 02 01 03 04 10 30 0e 04 00 02 01 00 02 01 00 04 00 04 00 04 00 30 12 04 00 04 00 a0 0c 02 02 37 f0 02 01 00 02 01 00 30 00|"; depth:60; dsize:60; flowbits:isset,soc.nmap.su.snmp1; classtype:network-scan; priority:2; threshold:type limit,track by_src,count 1,seconds 10; sid:1000506; rev:2;)
+
+alert udp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable UDP Port Scan - Nmap -sU-like"; dsize:0; threshold:type both,track by_src,count 5,seconds 1; classtype:network-scan; priority:2; sid:1000507; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP OS FINGERPRINTING (-sA)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable Nmap TCP ACK-Window probe -sA/-sW"; flags:A; seq:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1000601; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable Nmap TCP ACK-Window Scan -sA/-sW"; flags:A; seq:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1000603; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sN)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - TCP NULL probe - Nmap -sN-like"; flags:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1000701; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable TCP NULL Scan - Nmap -sN-like"; flags:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1000702; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sF)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - TCP FIN probe - Nmap -sF-like"; flags:F; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1000801; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable TCP FIN Scan - Nmap -sF-like"; flags:F; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1000802; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sX)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - TCP Xmas probe - Nmap -sX-like"; flags:FPU; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1000901; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable TCP Xmas Scan - Nmap -sX-like"; flags:FPU; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1000902; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sM)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - TCP Maimon FINACK probe - Nmap -sM-like"; flags:FA; seq:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001001; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable TCP Maimon Scan - Nmap -sM-like"; flags:FA; seq:0; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1001002; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (--scanflags PSH)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - TCP PSH-only probe - Nmap --scanflags-like"; flags:P; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001101; rev:2;)
+
+alert tcp any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable TCP PSH-only Scan - Nmap --scanflags-like"; flags:P; window:1024; dsize:0; fragbits:!D; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 1; sid:1001102; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (--sO — IP Protocol Scan)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert udp any any -> 192.168.0.16 40125 (msg:"SOC DEKMA - UDP empty protocol probe - Nmap -sO-like"; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001201; rev:2;)
+
+alert ip any any -> 192.168.0.16 any (msg:"SOC DEKMA - GRE empty protocol probe - Nmap -sO-like"; ip_proto:47; dsize:0; fragbits:!D; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001202; rev:2;)
+
+# (DEBUG RULE) alert ip any any -> 192.168.0.16 any (msg:"DEBUG NMAP -sO - Burst empty IP protocol probes"; ip_proto:>17; dsize:0; fragbits:!D; detection_filter:track by_src,count 5,seconds 1; sid:1001203; rev:1;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sY — SCTP INIT Scan)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert ip any any -> 192.168.0.16 any (msg:"SOC DEKMA - SCTP INIT probe - Nmap-like"; ip_proto:132; dsize:32; fragbits:!D; content:"|00 00 00 00|"; offset:4; depth:4; content:"|01 00 00 14|"; offset:12; depth:4; content:"|00 00 80 00 00 0A 08 00|"; offset:20; depth:8; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001301; rev:2;)
+
+alert ip any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable SCTP INIT Scan - Nmap -sY-like"; ip_proto:132; dsize:32; fragbits:!D; content:"|00 00 00 00|"; offset:4; depth:4; content:"|01 00 00 14|"; offset:12; depth:4; content:"|00 00 80 00 00 0A 08 00|"; offset:20; depth:8; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 5; sid:1001302; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-sZ)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert ip any any -> 192.168.0.16 any (msg:"SOC DEKMA - SCTP COOKIE ECHO probe - Nmap -sZ-like"; ip_proto:132; dsize:20; fragbits:!D; content:"|0A 00 00 08|"; offset:12; depth:4; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001401; rev:2;)
+
+alert ip any any -> 192.168.0.16 any (msg:"SOC DEKMA - Probable SCTP COOKIE ECHO Scan - Nmap -sZ-like"; ip_proto:132; dsize:20; fragbits:!D; content:"|0A 00 00 08|"; offset:12; depth:4; classtype:network-scan; priority:2; threshold:type both,track by_src,count 5,seconds 5; sid:1001402; rev:1;)
+
+# ============================================================
+# SOC DEKMA - NMAP (-PP)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert icmp any any -> 192.168.0.16 any (msg:"SOC DEKMA - ICMP Timestamp probe - Nmap-like"; itype:13; icode:0; dsize:16; fragbits:!D; content:"|00 00 00 00 00 00 00 00 00 00 00 00 00 00|"; offset:2; depth:14; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001501; rev:2;)
+
+# ============================================================
+# SOC DEKMA - NMAP (- SMB2)
+# Snort 2.9.20
+# Destino protegido: 192.168.0.16
+# ============================================================
+
+alert tcp any any -> 192.168.0.16 445 (msg:"SOC DEKMA - SMB2 Negotiate probe - Nmap-like"; flow:to_server,established; content:"|FE 53 4D 42 40 00|"; offset:4; depth:6; content:"|00 00|"; offset:16; depth:2; content:"1234567890123456|24 00|"; offset:52; depth:18; content:"1234567890123456"; offset:80; depth:16; classtype:network-scan; priority:3; threshold:type limit,track by_src,count 1,seconds 5; sid:1001701; rev:2;)

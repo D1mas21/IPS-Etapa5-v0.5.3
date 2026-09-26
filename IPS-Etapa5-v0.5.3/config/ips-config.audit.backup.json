@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "protected_server": "192.168.0.16",
+  "trusted_hosts": {
+    "gateway": "192.168.0.1",
+    "administrator": "192.168.0.3",
+    "soc_wazuh": "192.168.0.15",
+    "public_ip": "201.222.77.13"
+  },
+  "allowlist": [
+    {
+      "network": "192.168.0.4",
+      "reason": "Equipo autorizado por el administrador"
+    }
+  ],
+  "denylist": [],
+  "operation": {
+    "mode": "Audit",
+    "block_seconds": 300,
+    "max_active_blocks": 256,
+    "poll_milliseconds": 200,
+    "delay_warning_seconds": 10,
+    "max_event_age_seconds": 30
+  },
+  "snort": {
+    "alert_path": "C:\\Snort\\log\\alert-live.log",
+    "daily_log_directory": "C:\\Snort\\log"
+  }
+}

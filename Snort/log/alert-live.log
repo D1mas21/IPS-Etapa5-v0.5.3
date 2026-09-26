@@ -1,0 +1,14 @@
+09/19-21:04:17.005304  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:445 -> 192.168.0.7:41450
+09/19-21:04:34.819208  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:445 -> 192.168.0.7:48568
+09/19-21:05:35.250372  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:445 -> 192.168.0.7:42152
+09/19-21:05:40.609347  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:42152 -> 192.168.0.16:445
+09/19-21:05:56.278833  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:445 -> 192.168.0.7:42152
+09/19-21:07:10.110028  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.3:59599 -> 192.168.0.16:80
+09/19-21:09:27.721419  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:80 -> 192.168.0.3:59599
+09/19-21:09:55.152110  [**] [1:1000003:1] SOC DEKMA - Nmap probable TCP SYN scan sobre puerto abierto [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:34482 -> 192.168.0.16:445
+09/19-21:09:55.192031  [**] [1:1000504:1] DEBUG NMAP -sU - NetBIOS NBSTAT wildcard probe [**] [Priority: 0] {UDP} 192.168.0.7:44166 -> 192.168.0.16:137
+09/19-21:09:55.197553  [**] [1:1001701:2] SOC DEKMA - SMB2 Negotiate probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:58338 -> 192.168.0.16:445
+09/19-21:11:12.517234  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bc7e:a2ca:8d9d:8c75:59473 -> 2603:1030:040c:000e:0000:0000:0000:0002:443
+09/19-21:11:12.650675  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0002:443 -> 2800:0320:c2a6:cb00:bc7e:a2ca:8d9d:8c75:59473
+09/19-21:15:17.651506  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:bc7e:a2ca:8d9d:8c75:59473 -> 2603:1030:040c:000e:0000:0000:0000:0002:443
+09/19-21:15:17.803253  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0002:443 -> 2800:0320:c2a6:cb00:bc7e:a2ca:8d9d:8c75:59473

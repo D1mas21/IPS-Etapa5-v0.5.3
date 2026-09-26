@@ -1,0 +1,138 @@
+09/18-21:34:56.674023  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:34:56.674023  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:08.615024  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:08.615024  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:09.615126  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:09.615126  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:17.703559  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:17.703559  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:18.704546  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:18.704546  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:19.720054  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:35:19.720054  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:36:41.040838  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:36:41.040838  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:36:42.090098  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:36:42.090098  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:42:12.037259  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1063:0027:0002:0000:0000:0000:0014:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49830
+09/18-21:43:02.572714  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:43:02.707622  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-21:46:07.374764  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:46:07.507655  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-21:46:07.547724  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:48:04.189715  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.3:49837 -> 23.196.75.99:443
+09/18-21:48:50.103584  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.3:49837 -> 23.196.75.99:443
+09/18-21:48:50.104016  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49838 -> 2600:1419:3200:0000:0000:0000:be62:a132:443
+09/18-21:49:03.894647  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:49:03.894647  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:49:04.937395  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:49:04.937395  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:49:06.038370  [**] [1:366:11] PROTOCOL-ICMP PING Unix [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:49:06.038370  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:50:12.507511  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:50:12.640108  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-21:51:32.084164  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:53:27.801465  [**] [1:388:8] PROTOCOL-ICMP Address Mask Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:53:28.838587  [**] [1:388:8] PROTOCOL-ICMP Address Mask Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:54:17.640987  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:54:17.776647  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-21:55:22.083598  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:55:22.083598  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:55:24.159215  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:55:26.194435  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-21:58:22.775503  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-21:58:22.907772  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:02:24.530796  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:02:24.530796  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:02:25.765718  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:02:25.765718  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:02:27.908474  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:02:28.040034  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:05:47.040287  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49836 -> 2606:4700:4403:0000:0000:0000:ac40:94eb:443
+09/18-22:06:33.040701  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:06:33.172046  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:08:50.237788  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:08:50.237788  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:41771 -> 192.168.0.16:80
+09/18-22:08:50.237788  [**] [1:1000601:2] SOC DEKMA - Probable Nmap TCP ACK-Window probe -sA/-sW [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:41771 -> 192.168.0.16:80
+09/18-22:08:50.237788  [**] [1:1000304:2] SOC DEKMA - Nmap OS fingerprint probe T4 ACK auxiliary [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:41771 -> 192.168.0.16:80
+09/18-22:08:50.238239  [**] [1:1001501:1] DEBUG SOC DEKMA - ICMP Timestamp probe - Nmap -PP-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:08:50.238239  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:10:38.172394  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:10:38.307893  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:16:02.846588  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:02.847489  [**] [1:1000601:2] SOC DEKMA - Probable Nmap TCP ACK-Window probe -sA/-sW [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:39661 -> 192.168.0.16:80
+09/18-22:16:02.847489  [**] [1:1000304:2] SOC DEKMA - Nmap OS fingerprint probe T4 ACK auxiliary [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:39661 -> 192.168.0.16:80
+09/18-22:16:02.848513  [**] [1:1001501:2] SOC DEKMA - ICMP Timestamp probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:02.848513  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:28.281663  [**] [1:1001501:2] SOC DEKMA - ICMP Timestamp probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:28.281663  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:29.292890  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:36.453419  [**] [1:384:8] PROTOCOL-ICMP PING [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:36.454796  [**] [1:1000601:2] SOC DEKMA - Probable Nmap TCP ACK-Window probe -sA/-sW [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:45912 -> 192.168.0.16:80
+09/18-22:16:36.454796  [**] [1:1000304:2] SOC DEKMA - Nmap OS fingerprint probe T4 ACK auxiliary [**] [Classification: Detection of a Network Scan] [Priority: 3] {TCP} 192.168.0.7:45912 -> 192.168.0.16:80
+09/18-22:16:36.454796  [**] [1:1001501:2] SOC DEKMA - ICMP Timestamp probe - Nmap-like [**] [Classification: Detection of a Network Scan] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:16:36.454796  [**] [1:453:8] PROTOCOL-ICMP Timestamp Request [**] [Classification: Misc activity] [Priority: 3] {ICMP} 192.168.0.7 -> 192.168.0.16
+09/18-22:22:00.547889  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.3:49853 -> 192.168.0.16:80
+09/18-22:23:46.462349  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:80 -> 192.168.0.3:49852
+09/18-22:24:46.359794  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48448 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.360880  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48448 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.464764  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48454 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.464764  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48454 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.466360  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48506 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.468354  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48506 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.601979  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48472 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.602209  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48478 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.605214  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48472 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.605214  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48478 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.609527  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48492 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:46.641135  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48492 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:49.691602  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48510 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:49.700223  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:48510 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:56.598234  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:80 -> 192.168.0.3:49853
+09/18-22:24:57.069701  [**] [129:12:1] Consecutive TCP small segments exceeding threshold [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:53158 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:57.119144  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:53158 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:24:57.120313  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:53158 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:25:04.334247  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:33412 -> 192.168.0.16:80
+09/18-22:25:04.927670  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:33406 -> 192.168.0.16:80
+09/18-22:25:04.926291  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:33422 -> 192.168.0.16:80
+09/18-22:25:04.927356  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:33434 -> 192.168.0.16:80
+09/18-22:26:22.759873  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:26:22.904661  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:27:01.848154  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.16:80 -> 192.168.0.7:33412
+09/18-22:27:24.286557  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:37928 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:22:21.416169  [**] [120:3:1] (http_inspect) NO CONTENT-LENGTH OR TRANSFER-ENCODING IN HTTP RESPONSE [**] [Classification: Unknown Traffic] [Priority: 3] {TCP} 192.168.0.16:80 -> 192.168.0.3:49853
+09/18-22:28:38.717226  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:53174 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:29:36.394932  [**] [119:19:1] (http_inspect) LONG HEADER [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:53380 -> 192.168.0.16:80
+09/18-22:29:42.040720  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:29:42.040720  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:29:42.041159  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:29:42.103259  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:30:27.905193  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:30:28.036535  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:32:24.686434  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:f7a6:ca4d:d6a1:7d34:40756 -> 2a04:4e42:0034:0000:0000:0000:0000:0347:443
+09/18-22:34:26.886675  [**] [139:1:1] (spp_sdf) SDF Combination Alert [**] [Classification: Senstive Data] [Priority: 2] {PROTO:254} 2600:1900:4110:086f:0000:0000:0000:0000 -> 2800:0320:c2a6:cb00:f9d8:c55d:d0a4:367a
+09/18-22:34:33.036658  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:34:33.172794  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:34:42.271582  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:34:42.272520  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:34:42.332881  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:37:52.299252  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1061:0014:0129:0000:0000:0000:0001:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49877
+09/18-22:37:52.299252  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49877 -> 2603:1061:0014:0129:0000:0000:0000:0001:443
+09/18-22:37:58.547211  [**] [129:15:1] Reset outside window [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49866 -> 2603:1063:2001:1809:0000:0000:0365:0ff1:443
+09/18-22:38:38.173523  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:38:38.305385  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:39:42.501239  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:39:42.502082  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:39:42.571906  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:41:59.670264  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:41:59.731586  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:41:59.899358  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:41:59.900877  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:41:59.900877  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.0.7:51122 -> 34.107.243.93:443
+09/18-22:41:59.962035  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:41:59.962035  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 34.107.243.93:443 -> 192.168.0.7:51122
+09/18-22:42:07.360606  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:42:07.493731  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
+09/18-22:42:07.533840  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:46:12.494592  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673 -> 2603:1030:040c:000e:0000:0000:0000:0000:443
+09/18-22:46:12.626798  [**] [129:20:1] TCP session without 3-way handshake [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 2603:1030:040c:000e:0000:0000:0000:0000:443 -> 2800:0320:c2a6:cb00:b877:d7d0:7704:c2b8:49673
