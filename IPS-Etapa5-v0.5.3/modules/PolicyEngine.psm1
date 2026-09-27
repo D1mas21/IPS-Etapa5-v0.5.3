@@ -131,10 +131,12 @@ function Remove-IPSExpiredPolicyState {
 }
 
 function New-IPSPolicyResult {
-    param([string]$Result,[string]$Reason,$Policy,[int]$Count,[int]$DistinctPorts,[int]$DistinctSids,[int]$CooldownRemaining=0)
+    param([string]$Result,[string]$Reason,$Policy,[int]$Count,[int]$DistinctPorts,[int]$DistinctSids,
+          [int]$CooldownRemaining=0,[string]$ProposalId=$null)
     [pscustomobject]@{
         Result=$Result;Reason=$Reason
         PolicyId=$(if($null -eq $Policy){$null}else{$Policy.id})
+        ProposalId=$ProposalId
         ObservedCount=$Count
         RequiredCount=$(if($null -eq $Policy){0}else{[int]$Policy.threshold.count})
         DistinctPorts=$DistinctPorts
@@ -144,6 +146,46 @@ function New-IPSPolicyResult {
         WindowSeconds=$(if($null -eq $Policy){0}else{[int]$Policy.threshold.window_seconds})
         ProposedBlockSeconds=$(if($null -eq $Policy){0}else{[int]$Policy.proposed_block_seconds})
         CooldownRemainingSeconds=$CooldownRemaining
+    }
+}
+
+function Get-IPSPendingDecisionKey {
+    param($Engine,[Parameter(Mandatory=$true)][string]$ProposalId)
+    foreach($key in @($Engine.PendingDecisions.Keys)) {
+        if([string]$Engine.PendingDecisions[$key].ProposalId -ceq $ProposalId) { return $key }
+    }
+    return $null
+}
+
+function Confirm-IPSPolicyBlock {
+    [CmdletBinding()]
+    param([Parameter(Mandatory=$true)]$Engine,[Parameter(Mandatory=$true)][string]$ProposalId,
+          [DateTime]$NowUtc=([DateTime]::UtcNow))
+    $trackingKey=Get-IPSPendingDecisionKey -Engine $Engine -ProposalId $ProposalId
+    if([string]::IsNullOrWhiteSpace($trackingKey)) { throw "Propuesta desconocida o ya resuelta: $ProposalId" }
+    $pending=$Engine.PendingDecisions[$trackingKey]
+    $policy=$pending.Policy
+    $null=$Engine.Tracking.Remove($trackingKey)
+    if([int]$policy.cooldown_seconds -gt 0) {
+        $Engine.Cooldowns[$trackingKey]=$NowUtc.AddSeconds([int]$policy.cooldown_seconds)
+    }
+    $null=$Engine.PendingDecisions.Remove($trackingKey)
+    [pscustomobject]@{
+        Result='COMMITTED';ProposalId=$ProposalId;PolicyId=$policy.id;Source=$pending.Source
+        CooldownSeconds=[int]$policy.cooldown_seconds
+    }
+}
+
+function Cancel-IPSPolicyBlock {
+    [CmdletBinding()]
+    param([Parameter(Mandatory=$true)]$Engine,[Parameter(Mandatory=$true)][string]$ProposalId)
+    $trackingKey=Get-IPSPendingDecisionKey -Engine $Engine -ProposalId $ProposalId
+    if([string]::IsNullOrWhiteSpace($trackingKey)) { throw "Propuesta desconocida o ya resuelta: $ProposalId" }
+    $pending=$Engine.PendingDecisions[$trackingKey]
+    $null=$Engine.PendingDecisions.Remove($trackingKey)
+    [pscustomobject]@{
+        Result='ABORTED';ProposalId=$ProposalId;PolicyId=$pending.Policy.id;Source=$pending.Source
+        TrackingPreserved=$Engine.Tracking.ContainsKey($trackingKey)
     }
 }
 
