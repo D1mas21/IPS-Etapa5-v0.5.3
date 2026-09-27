@@ -16,9 +16,18 @@ Check ($r[0].Result -eq 'TRACKING' -and $r[0].ObservedCount -eq 1) 'SYN first al
 $r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 445) '192.168.0.7' ($t.AddSeconds(1)))
 Check ($r[0].Result -eq 'TRACKING' -and $r[0].DistinctPorts -eq 2) 'SYN second port tracked'
 $r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 3389) '192.168.0.7' ($t.AddSeconds(2)))
-Check ($r[0].Result -eq 'WOULD_BLOCK' -and $r[0].ObservedCount -eq 3 -and $r[0].ProposedBlockSeconds -eq 300) 'SYN threshold proposes block'
+Check ($r[0].Result -eq 'WOULD_BLOCK' -and $r[0].ObservedCount -eq 3 -and $r[0].ProposedBlockSeconds -eq 300 -and -not [string]::IsNullOrWhiteSpace($r[0].ProposalId)) 'SYN threshold creates pending proposal'
+$firstProposal=$r[0].ProposalId
 $r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 80) '192.168.0.7' ($t.AddSeconds(3)))
-Check ($r[0].Result -eq 'COOLDOWN' -and $r[0].CooldownRemainingSeconds -gt 0) 'Repeated decision enters cooldown'
+Check ($r[0].Result -eq 'PENDING' -and $r[0].ProposalId -eq $firstProposal) 'Pending proposal prevents duplicate decision'
+$abort=Cancel-IPSPolicyBlock -Engine $engine -ProposalId $firstProposal
+Check ($abort.Result -eq 'ABORTED' -and $abort.TrackingPreserved) 'Failed actuation abort preserves tracking'
+$r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 443) '192.168.0.7' ($t.AddSeconds(4)))
+Check ($r[0].Result -eq 'WOULD_BLOCK' -and $r[0].ProposalId -ne $firstProposal) 'Aborted proposal can be proposed again'
+$commit=Confirm-IPSPolicyBlock -Engine $engine -ProposalId $r[0].ProposalId -NowUtc ($t.AddSeconds(4))
+Check ($commit.Result -eq 'COMMITTED' -and $commit.CooldownSeconds -eq 60) 'Successful actuation commits cooldown'
+$r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 80) '192.168.0.7' ($t.AddSeconds(5)))
+Check ($r[0].Result -eq 'COOLDOWN' -and $r[0].CooldownRemainingSeconds -gt 0) 'Cooldown starts only after commit'
 $null=Add-IPSPolicyAlert $engine (Alert 1000003 1 80) '192.168.0.8' $t
 $r=@(Add-IPSPolicyAlert $engine (Alert 1000003 1 445) '192.168.0.8' ($t.AddSeconds(11)))
 Check ($r[0].Result -eq 'TRACKING' -and $r[0].ObservedCount -eq 1) 'Expired events removed from window'
