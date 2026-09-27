@@ -98,10 +98,10 @@ function Write-IPSActuatorOutcome {
 }
 
 function Submit-IPSBlockRequest {
-    param([string]$Source,[string]$Destination,[string]$PolicyId,[int]$BlockSeconds)
+    param([string]$Source,[string]$Destination,[string]$PolicyId,[int]$BlockSeconds,[string]$ProposalId=$null)
     $submitWatch=[Diagnostics.Stopwatch]::StartNew()
     $requestWrite=Write-IPSJsonEvent 'BLOCK_REQUEST' @{
-        policy_id=$PolicyId;src_ip=$Source;dst_ip=$Destination;block_seconds=$BlockSeconds
+        policy_id=$PolicyId;proposal_id=$ProposalId;src_ip=$Source;dst_ip=$Destination;block_seconds=$BlockSeconds
         reason='Solicitud enviada al actuador despues de WOULD_BLOCK.'
     } -PassThru
     $actuatorWatch=[Diagnostics.Stopwatch]::StartNew()
@@ -120,6 +120,7 @@ function Submit-IPSBlockRequest {
         ConsoleWriteMilliseconds=[Math]::Round(($requestWrite.ConsoleWriteMilliseconds+$outcomeWrite.ConsoleWriteMilliseconds),3)
         TotalMilliseconds=[Math]::Round($submitWatch.Elapsed.TotalMilliseconds,3)
         Result=$outcome.Result
+        Outcome=$outcome
     }
 }
 
@@ -266,9 +267,10 @@ try {
                     if($policyResult.Result -eq 'WOULD_BLOCK') { $policyEvent='WOULD_BLOCK' }
                     elseif($policyResult.Result -eq 'NO_POLICY') { $policyEvent='ALERT_NO_POLICY' }
                     elseif($policyResult.Result -eq 'COOLDOWN') { $policyEvent='POLICY_COOLDOWN' }
+                    elseif($policyResult.Result -eq 'PENDING') { $policyEvent='POLICY_PENDING' }
                     elseif($policyResult.Result -eq 'STATE_LIMIT') { $policyEvent='POLICY_STATE_LIMIT' }
                     $policyWrite=Write-IPSJsonEvent $policyEvent @{
-                        policy_id=$policyResult.PolicyId;src_ip=$alert.Source;dst_ip=$alert.Destination
+                        policy_id=$policyResult.PolicyId;proposal_id=$policyResult.ProposalId;src_ip=$alert.Source;dst_ip=$alert.Destination
                         trigger_gid=$alert.Gid;trigger_sid=$alert.Sid;trigger_rev=$alert.Rev
                         observed_count=$policyResult.ObservedCount;required_count=$policyResult.RequiredCount
                         distinct_ports=$policyResult.DistinctPorts;required_distinct_ports=$policyResult.RequiredDistinctPorts
@@ -281,9 +283,26 @@ try {
                     $logFileWriteMs+=$policyWrite.FileWriteMilliseconds
                     $consoleWriteMs+=$policyWrite.ConsoleWriteMilliseconds
                     if($policyResult.Result -eq 'WOULD_BLOCK'){
-                        $actuation=Submit-IPSBlockRequest $alert.Source $alert.Destination $policyResult.PolicyId ([int]$policyResult.ProposedBlockSeconds)
+                        $actuation=Submit-IPSBlockRequest $alert.Source $alert.Destination $policyResult.PolicyId ([int]$policyResult.ProposedBlockSeconds) $policyResult.ProposalId
                         $actuatorMs+=$actuation.ActuatorMilliseconds;$actuatorTotalMs+=$actuation.TotalMilliseconds
                         $logMutexWaitMs+=$actuation.MutexWaitMilliseconds;$logFileWriteMs+=$actuation.FileWriteMilliseconds;$consoleWriteMs+=$actuation.ConsoleWriteMilliseconds
+                        if(@('SIMULATED','CREATED','REFRESHED') -contains $actuation.Result){
+                            $transaction=Confirm-IPSPolicyBlock -Engine $policyEngine -ProposalId $policyResult.ProposalId -NowUtc ([DateTime]::UtcNow)
+                            Write-IPSJsonEvent 'BLOCK_COMMITTED' @{
+                                policy_id=$transaction.PolicyId;proposal_id=$transaction.ProposalId;src_ip=$transaction.Source
+                                dst_ip=$alert.Destination;actuator_result=$actuation.Result
+                                cooldown_seconds=$transaction.CooldownSeconds
+                                reason='El actuador confirmo la solicitud; se inicia cooldown.'
+                            }
+                        } else {
+                            $transaction=Cancel-IPSPolicyBlock -Engine $policyEngine -ProposalId $policyResult.ProposalId
+                            Write-IPSJsonEvent 'BLOCK_ABORTED' @{
+                                policy_id=$transaction.PolicyId;proposal_id=$transaction.ProposalId;src_ip=$transaction.Source
+                                dst_ip=$alert.Destination;actuator_result=$actuation.Result
+                                tracking_preserved=$transaction.TrackingPreserved
+                                reason='El actuador no confirmo el bloqueo; no se inicia cooldown.'
+                            }
+                        }
                     }
                 }
             }
