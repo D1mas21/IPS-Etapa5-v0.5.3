@@ -111,6 +111,7 @@ function New-IPSPolicyEngine {
         Index=$index
         Tracking=@{}
         Cooldowns=@{}
+        PendingDecisions=@{}
     }
 }
 
