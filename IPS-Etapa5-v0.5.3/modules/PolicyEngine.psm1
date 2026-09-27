@@ -203,7 +203,16 @@ function Add-IPSPolicyAlert {
         $trackingKey=$policy.id+'|'+$Source
         if($Engine.Cooldowns.ContainsKey($trackingKey)) {
             $remaining=[int][Math]::Ceiling(($Engine.Cooldowns[$trackingKey]-$NowUtc).TotalSeconds)
-            $null=$results.Add((New-IPSPolicyResult 'COOLDOWN' 'La politica ya propuso un bloqueo recientemente.' $policy 0 0 0 $remaining))
+            $null=$results.Add((New-IPSPolicyResult 'COOLDOWN' 'La politica ya confirmo un bloqueo recientemente.' $policy 0 0 0 $remaining))
+            continue
+        }
+        if($Engine.PendingDecisions.ContainsKey($trackingKey)) {
+            $pending=$Engine.PendingDecisions[$trackingKey]
+            $state=$(if($Engine.Tracking.ContainsKey($trackingKey)){$Engine.Tracking[$trackingKey]}else{$null})
+            $count=$(if($null -eq $state){0}else{$state.Events.Count})
+            $ports=$(if($null -eq $state){@()}else{@($state.Events | Where-Object {$_.Port -ge 0} | ForEach-Object {$_.Port} | Sort-Object -Unique)})
+            $sids=$(if($null -eq $state){@()}else{@($state.Events | ForEach-Object {$_.Sid} | Sort-Object -Unique)})
+            $null=$results.Add((New-IPSPolicyResult 'PENDING' 'Existe una propuesta pendiente de resultado del actuador.' $policy $count $ports.Count $sids.Count 0 ([string]$pending.ProposalId)))
             continue
         }
         if(-not $Engine.Tracking.ContainsKey($trackingKey)) {
@@ -224,9 +233,11 @@ function Add-IPSPolicyAlert {
         if([int]$policy.threshold.distinct_ports -gt 0) { $met=$met -and ($ports.Count -ge [int]$policy.threshold.distinct_ports) }
         if([int]$policy.threshold.distinct_sids -gt 0) { $met=$met -and ($sids.Count -ge [int]$policy.threshold.distinct_sids) }
         if($met) {
-            $null=$results.Add((New-IPSPolicyResult 'WOULD_BLOCK' 'Umbral de politica satisfecho; solicitud disponible para el actuador.' $policy $count $ports.Count $sids.Count))
-            $Engine.Tracking.Remove($trackingKey)
-            if([int]$policy.cooldown_seconds -gt 0) { $Engine.Cooldowns[$trackingKey]=$NowUtc.AddSeconds([int]$policy.cooldown_seconds) }
+            $proposalId=[Guid]::NewGuid().ToString('N')
+            $Engine.PendingDecisions[$trackingKey]=[pscustomobject]@{
+                ProposalId=$proposalId;Policy=$policy;Source=$Source;CreatedUtc=$NowUtc
+            }
+            $null=$results.Add((New-IPSPolicyResult 'WOULD_BLOCK' 'Umbral satisfecho; propuesta pendiente de confirmacion del actuador.' $policy $count $ports.Count $sids.Count 0 $proposalId))
         } else {
             $null=$results.Add((New-IPSPolicyResult 'TRACKING' 'Alerta acumulada; el umbral aun no se cumple.' $policy $count $ports.Count $sids.Count))
         }
@@ -234,4 +245,4 @@ function Add-IPSPolicyAlert {
     return @($results.ToArray())
 }
 
-Export-ModuleMember -Function Import-IPSPolicyConfiguration,New-IPSPolicyEngine,Add-IPSPolicyAlert
+Export-ModuleMember -Function Import-IPSPolicyConfiguration,New-IPSPolicyEngine,Add-IPSPolicyAlert,Confirm-IPSPolicyBlock,Cancel-IPSPolicyBlock
